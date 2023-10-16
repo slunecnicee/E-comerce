@@ -18,9 +18,9 @@ export async function POST(req) {
         line_items: res,
         mode: "payment",
         success_url:
-          "https://vercel.com/mayas-projects/checkout" + "?status=success",
+          "https://e-comerce-iota-five.vercel.app/checkout" + "?status=success",
         cancel_url:
-          "https://vercel.com/mayas-projects/checkout" + "?status=cancel",
+          "https://e-comerce-iota-five.vercel.app/checkout" + "?status=cancel",
       });
 
       return NextResponse.json({
