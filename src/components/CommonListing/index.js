@@ -46,7 +46,7 @@ const CommonListing = ({ data }) => {
           {adminData.data && adminData.data.length
             ? adminData.data.map((item) => (
                 <article
-                  className="flex flex-col justify-between overflow-hidden shadow-xl cursor-pointer"
+                  className="flex flex-col  justify-between overflow-hidden shadow-xl cursor-pointer"
                   key={item._id}
                 >
                   <ProductTile item={item} />

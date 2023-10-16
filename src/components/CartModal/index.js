@@ -28,6 +28,7 @@ const CartModal = () => {
       const updatedData =
         res.data && res.data.length
           ? res.data.map((item) => ({
+              key: item._id,
               ...item,
               productID: {
                 ...item.productID,
