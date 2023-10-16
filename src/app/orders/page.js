@@ -65,7 +65,7 @@ export default function Orders() {
             <div className="px-4 py-6 sm:px-8 sm:py-10">
               <div className="flow-root">
                 {allOrdersForUser && allOrdersForUser.length ? (
-                  <ul className="flex flex-col gap-4">
+                  <ul className="flex flex-col-reverse gap-4">
                     {allOrdersForUser.map((item) => (
                       <li
                         key={item._id}
@@ -84,7 +84,7 @@ export default function Orders() {
                             </p>
                           </div>
                         </div>
-                        <div className="flex-reverse gap-2">
+                        <div className="flex  gap-2">
                           {item.orderItems.map((orderItem, index) => (
                             <div key={index} className="shrink-0">
                               <img
