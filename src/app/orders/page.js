@@ -63,7 +63,7 @@ export default function Orders() {
         <div className="mt-8 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div>
             <div className="px-4 py-6 sm:px-8 sm:py-10">
-              <div className="flow-root">
+              <div className="">
                 {allOrdersForUser && allOrdersForUser.length ? (
                   <ul className="flex flex-col-reverse gap-4">
                     {allOrdersForUser.map((item) => (
