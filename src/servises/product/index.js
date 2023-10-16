@@ -21,10 +21,13 @@ export const addNewProduct = async (formData) => {
 
 export const getAllAdminProducts = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/admin/all-products", {
-      method: "GET",
-      cache: "no-store",
-    });
+    const res = await fetch(
+      "https://e-comerce-iota-five.vercel.app/api/admin/all-products",
+      {
+        method: "GET",
+        cache: "no-store",
+      }
+    );
 
     const data = await res.json();
 
