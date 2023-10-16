@@ -12,8 +12,8 @@ import ComponentLevelLoader from "@/components/Loader/componentLevel";
 import Notification from "@/components/Nofication";
 
 const initialFormdata = {
-  email: "",
-  password: "",
+  email: "dean@dean.com",
+  password: "123456",
 };
 
 export default function Login() {
