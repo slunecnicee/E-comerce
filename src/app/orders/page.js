@@ -84,7 +84,7 @@ export default function Orders() {
                             </p>
                           </div>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex-reverse gap-2">
                           {item.orderItems.map((orderItem, index) => (
                             <div key={index} className="shrink-0">
                               <img
