@@ -93,7 +93,6 @@ const AdminAddNewProduct = () => {
   }, [currentUpdatedProduct]);
 
   async function handleImage(e) {
-    console.log(e.target.files);
     const extractImageUrl = await helperForUPloadingImageToFirebase(
       e.target.files[0]
     );
@@ -121,16 +120,12 @@ const AdminAddNewProduct = () => {
     });
   };
 
-  console.log(currentUpdatedProduct);
-
   async function handleAddProduct() {
     setComponentLevelLoader({ loading: true, id: "" });
     const res =
       currentUpdatedProduct !== null
         ? await updateAProduct({ ...formData, userId: currentUSer })
         : await addNewProduct({ ...formData, userId: currentUSer });
-
-    console.log(res);
 
     if (res.success) {
       setComponentLevelLoader({ loading: false, id: "" });
