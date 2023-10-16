@@ -84,7 +84,7 @@ export const loginFormControls = [
   {
     id: "email",
     type: "email",
-    placeholder: "Enter your email",
+    placeholder: "dean@dean.com",
     label: "Email",
     componentType: "input",
   },

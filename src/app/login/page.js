@@ -12,8 +12,8 @@ import ComponentLevelLoader from "@/components/Loader/componentLevel";
 import Notification from "@/components/Nofication";
 
 const initialFormdata = {
-  email: "dean@dean.com",
-  password: "123456",
+  email: "",
+  password: "",
 };
 
 export default function Login() {
@@ -112,7 +112,7 @@ export default function Login() {
                   )}
                 </button>
                 <div className="flex flex-col gap-2">
-                  <p>New to website ?</p>
+                  <p>Password:123456 </p>
                   <button
                     className="inline-flex w-full items-center justify-center bg-[#ad6d4a] text-yellow-400 px-6 py-4 text-lg 
                         transition-all duration-200 ease-in-out focus:shadow font-medium uppercase tracking-wide
