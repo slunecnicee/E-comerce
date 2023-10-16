@@ -4,7 +4,7 @@ import Listing from "@/components/CommonListing/Listing";
 import { getAllAdminProducts } from "@/servises/product";
 import { useState, useEffect } from "react";
 import { PulseLoader } from "react-spinners";
-export default function CelebAllProducts() {
+export default function AllAdminProducts() {
   const [allProducts, setAllProducts] = useState({
     loading: true,
     data: [],
