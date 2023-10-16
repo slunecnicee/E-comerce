@@ -15,7 +15,7 @@ export default function OtherAllProducts() {
       const res = await productByCategory("other");
       setAllProducts({
         loading: false,
-        data: res,
+        data: res.data,
       });
     };
     getAllProducts();

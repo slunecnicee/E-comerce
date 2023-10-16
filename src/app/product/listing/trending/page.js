@@ -16,7 +16,7 @@ export default function MenAllProducts() {
       console.log(res);
       setAllProducts({
         loading: false,
-        data: res,
+        data: res.data,
       });
     };
     getAllProducts();

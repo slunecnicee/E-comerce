@@ -15,7 +15,7 @@ export default function CelebAllProducts() {
       const res = await productByCategory("Celebcopy");
       setAllProducts({
         loading: false,
-        data: res,
+        data: res.data,
       });
     };
     getAllProducts();
