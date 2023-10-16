@@ -20,7 +20,7 @@ const Cart = () => {
 
   async function extractAllCartItems() {
     setPageLevelLoader(true);
-    const res = await getAllCartItems(user?.id);
+    const res = await getAllCartItems(user?._id);
 
     if (res.success) {
       const updatedData =
