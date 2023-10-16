@@ -13,6 +13,7 @@ export default function MenAllProducts() {
   useEffect(() => {
     const getAllProducts = async () => {
       const res = await productByCategory("men");
+      console.log(res);
       setAllProducts({
         loading: false,
         data: res,
@@ -34,5 +35,5 @@ export default function MenAllProducts() {
     );
   }
 
-  return <Listing data={allProducts.data.data} />;
+  return <Listing data={allProducts?.data?.data} />;
 }

@@ -22,7 +22,7 @@ export const addToCart = async (formData) => {
 export const getAllCartItems = async (id) => {
   try {
     const res = await fetch(
-      `http://localhost:3000/api/cart/all-cart-items?id=${id}`,
+      `https://e-comerce-iota-five.vercel.app/api/cart/all-cart-items?id=${id}`,
       {
         method: "GET",
         headers: {

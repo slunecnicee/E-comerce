@@ -18,7 +18,7 @@ export default function Listing({ data }) {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-4 lg:mt-16">
           {data && data.length ? (
-            data?.map((item) => (
+            data.map((item) => (
               <article
                 className="relative justify-between flex flex-col overflow-hidden shadow-xl cursor-pointer"
                 key={item._id}
