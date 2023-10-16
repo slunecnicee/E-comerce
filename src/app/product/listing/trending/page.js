@@ -35,5 +35,5 @@ export default function MenAllProducts() {
     );
   }
 
-  return <Listing data={allProducts?.data?.data} />;
+  return <Listing data={allProducts.data} />;
 }

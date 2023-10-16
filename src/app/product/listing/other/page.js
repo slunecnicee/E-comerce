@@ -34,5 +34,5 @@ export default function OtherAllProducts() {
     );
   }
 
-  return <Listing data={allProducts.data.data} />;
+  return <Listing data={allProducts.data} />;
 }
