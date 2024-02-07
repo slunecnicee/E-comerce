@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.17",
     "@stripe/stripe-js": "^2.1.7",
     "autoprefixer": "10.4.16",
+    "axios": "^1.6.7",
     "bcryptjs": "^2.4.3",
     "firebase": "^10.4.0",
     "joi": "^17.11.0",

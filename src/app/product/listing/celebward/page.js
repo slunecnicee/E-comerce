@@ -13,6 +13,7 @@ export default function CelebAllProducts() {
   useEffect(() => {
     const getAllProducts = async () => {
       const res = await productByCategory("Celebcopy");
+      console.log(res);
       setAllProducts({
         loading: false,
         data: res.data,

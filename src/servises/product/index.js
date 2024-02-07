@@ -1,4 +1,5 @@
 import Cookies from "js-cookie";
+import axios from "axios";
 
 export const addNewProduct = async (formData) => {
   try {
@@ -30,7 +31,7 @@ export const getAllAdminProducts = async () => {
     );
 
     const data = await res.json();
-
+    console.log(data);
     return data;
   } catch (error) {
     console.log(error);
